@@ -1,0 +1,50 @@
+.header {
+    position: relative;
+    padding: 25px 0 39px;
+
+   	&-logo {
+		max-width: 172px;
+		max-height: 49px;
+	}
+	
+	>.container {
+        display: flex;
+    }
+
+    &-nav {
+        display: flex;
+        width: 100%;
+       
+    }
+
+    &-nav__list {
+        display: flex;
+        gap: 25px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    &-list-link {
+        padding: 16px 10px 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &-list-link:hover {
+        color: orange;
+    }
+
+
+
+    &-nav__item {
+        display: flex;
+    }
+
+    .btn-primary {
+        padding: 13px 22px;
+    }
+}
+
+.hamburger {
+    margin-left: auto;
+}

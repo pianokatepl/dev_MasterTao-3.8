@@ -1,0 +1,52 @@
+///colors///
+$color-primary: #E58D35;
+$color-secondary: #89C249;
+$bg-primary:#282B38;
+$bg-secondary: #363A4D;
+$text-color: #fff;
+$container-padding: 15px;
+$container-mobile-padding: 20px;
+///fonts///
+$font-primary: "ProximaNova";
+$section-margin-lg: 100px;
+$section-margin: 60px;
+
+@mixin default-bg {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $section-margin-lg;
+    max-width: 1920px;
+    padding: 90px 85px 100px;
+    position: relative;
+
+    &:before {
+        content: "";
+        border-radius: 20px;
+        position: absolute;
+        left: 42px;
+        right: 42px;
+        top: 0;
+        height: 100%;
+        background-color: $bg-secondary;
+        z-index: -1;
+    }
+
+    &:nth-child(odd) {
+        .template-title {
+            &:after {
+                background-color: $color-primary;
+            }
+        }
+    }
+}
+
+@mixin default-bg-mobile {
+    padding: 55px 0 60px;
+
+    &:before {
+        border-radius: 0;
+        left: 0;
+        right: 0;
+    }
+}

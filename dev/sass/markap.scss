@@ -1,0 +1,22 @@
+.color-item {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 24px;
+}
+
+.color-item-1 {
+    background-color: $color-primary;
+}
+
+.color-item-2 {
+    background-color: $color-secondary;
+}
+
+.color-item-3 {
+    background-color: $bg-primary;
+    border: 1px solid #fff;
+}
+
+.color-item-4 {
+    background-color: $bg-secondary;
+}

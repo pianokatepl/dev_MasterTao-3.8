@@ -1,0 +1,17 @@
+@media screen and (max-width: 1355px) {
+    .first-screen{
+        .container {
+            padding: 0 92px;
+        }
+    } 
+}
+
+@media screen and (max-width: 1199px) {
+    .header-nav__list {
+        gap: 20px;
+    }
+
+    .header-list-link {
+        padding: 16px 7px 10px;
+    }
+}
