@@ -5,8 +5,13 @@
    	&-logo {
 		max-width: 172px;
 		max-height: 49px;
-	}
+    }
 	
+    &-logo-img {
+		max-width: 100%;
+	    height: auto;
+	}
+
 	>.container {
         display: flex;
     }

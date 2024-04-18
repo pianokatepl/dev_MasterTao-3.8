@@ -6,8 +6,7 @@ $bg-secondary: #363A4D;
 $text-color: #fff;
 $container-padding: 15px;
 $container-mobile-padding: 20px;
-///fonts///
-$font-primary: "ProximaNova";
+
 $section-margin-lg: 100px;
 $section-margin: 60px;
 
@@ -28,7 +27,7 @@ $section-margin: 60px;
     }
 }
 
-@mixin default-bg {
+@mixin default-bg-lg {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -58,9 +57,8 @@ $section-margin: 60px;
     }
 }
 
-@mixin default-bg-mobile {
+@mixin default-bg {
     padding: 55px 0 60px;
-
     &:before {
         border-radius: 0;
         left: 0;

@@ -1,59 +1,75 @@
 const hamburger = document.querySelector('.hamburger')
 const headerNav = document.querySelector('.header-nav')
 
+
 hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle('is-active');
-  headerNav.classList.toggle('show');
+    hamburger.classList.toggle('is-active')
+    headerNav.classList.toggle('show')
 })
 
 
-$('#first-screen-slider').slick({ 
-   dots: true,
-   appendArrows: $('.first-screen-arrows'),
-   responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        arrows: false,
-      }
-    },
-  ]
-});
+$('#first-screen-slider').slick({
+    arrows:true,
+    dots:true,
+    appendArrows:$('.first-screen-arrow'),
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            arrows: false,
+          }
+        },
+      ]
+    });
 
-$('select').niceSelect();
+    $(document).ready(function() {
+      $('select').niceSelect();
+    });
 
-//Function Declaration
-const fileInput = document.querySelector('#calculation-file');
+  const fileInput = document.querySelector('#calculation-file');
 const fileName = document.querySelector('#file-name')
 
-fileInput.addEventListener('change', function() {
-  fileName.innerHTML = this.files[0].name
+fileInput.addEventListener('change', () => {
+   fileName.innerHTML = fileInput.files[0].name;
+});
+
+const controledField = document.querySelectorAll('[type="checkbox"]')
+const fileField = document.querySelectorAll('[type="file"]')
+
+controledField.forEach(input => {
+    input.closest('.input-wrapper').classList.add('controled-wrapped')
+    input.closest('.col').classList.add('controled-col')
 })
 
-
-
-
-const controledField = document.querySelectorAll('[type="checkbox"]');
-//console.log(controledInput);
-
-controledField.forEach (input =>{
-  input.closest('.input-wrapper').classList.add('controled-wrapper')
-  input.closest('.col').classList.add('controled-col')
-})
-
-const fileField = document.querySelectorAll('[type="file"]');
-
-fileField.forEach(input =>{
+fileField.forEach(input => {
   input.closest('.input-wrapper').classList.add('file-wrapper')
 })
 
+// Mobile Only Slider
+mobileOnlySlider(".slider-advantages", 1024);
 
-//Function Expression
-// const fileInput = document.querySelector('#calculation-file');
-// const fileName = document.querySelector('#file-name')
+function mobileOnlySlider($slidername, $breakpoint) {
+  const slider = $($slidername);
+  const settings = {
+    mobileFirst: true,
+    dots: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: $breakpoint,
+        settings: "unslick"
+      }
+    ]
+  };
+  slider.slick(settings);
+  $(window).on("resize", function () {
+    if ($(window).width() > $breakpoint) {
+      return;
+    }
+    if (!slider.hasClass("slick-initialized")) {
+      return slider.slick(settings);
+    }
+  });
+}
 
-// fileInput.addEventListener('change', () => {
-//   fileName.innerHTML = fileInput.files[0].name;
-// });
-
-//https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions
+  

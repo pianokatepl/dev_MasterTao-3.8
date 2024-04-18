@@ -1,11 +1,22 @@
+.calculation {
+    .container {
+        position: relative;
+    }
+}
+
 .calculation-row {
     display: flex;
     align-items: flex-start;
 }
 
 .calculation-decoration {
-    margin: -176px 0 0 -29px;
+    margin: auto 0 -100px -29px;
     height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 560px;
+    width: 30vw;
     img {
         max-width: calc(100% + 46px);
     }
@@ -17,6 +28,7 @@
     background: $bg-secondary;
     border-radius: 20px;
     padding: 50px 48px 61px;
+    box-shadow: 5px 15px 40px #323131;
     .col {
         padding: 0 15px; 
     } 
