@@ -11,6 +11,23 @@ $font-primary: "ProximaNova";
 $section-margin-lg: 100px;
 $section-margin: 60px;
 
+@mixin fieldState {
+    &:hover {
+        box-shadow: 0px 0px 2px 2px $color-primary;
+    }
+   
+    &:focus {
+        box-shadow: 0px 0px 2px 2px $color-secondary;
+    }
+
+    &:active {
+        box-shadow: 0px 0px 10px 0px $color-secondary;
+    }
+    &:focus-visible {
+        outline: none;
+    }
+}
+
 @mixin default-bg {
     margin-top: 0;
     margin-left: auto;

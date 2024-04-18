@@ -1,14 +1,44 @@
+.calculation-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.calculation-decoration {
+    margin: -176px 0 0 -29px;
+    height: auto;
+    img {
+        max-width: calc(100% + 46px);
+    }
+}
+
 .calculation-form {
     max-width: 626px;
+    min-width: 626px;
     background: $bg-secondary;
     border-radius: 20px;
-    padding: 50px 50px 61px;
+    padding: 50px 48px 61px;
+    .col {
+        padding: 0 15px; 
+    } 
+    .btn-lg {
+        padding: 19px 28px 30px;
+        font-size: 16px;
+    }
 }
+
+col.controled-col {
+    padding-top: 20px; }
 
 .input-wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
     margin-bottom: 20px;
+
+    &.controled-wrapper {
+        margin-bottom: 8px; }
+    &.file-wrapper {
+        padding-top: 46px; }
 }
 
 label {
@@ -18,33 +48,13 @@ label {
     margin-bottom: 6px;
 }
 
-
-
-
-
 input {
     border-radius: 10px;
     padding: 14px 20px;
     width: 100%;
     border: none;
     transition: all .4s;
-
-    &:hover {
-        box-shadow: 0px 0px 2px 2px $color-primary;
-    }
-   
-    &:focus {
-        box-shadow: 0px 0px 2px 2px $color-secondary;
-    }
-
-    &:active {
-        box-shadow: 0px 0px 10px 0px $color-secondary;
-    }
-
-    &:focus-visible {
-        outline: none;
-
-    }
+    @include fieldState;
 
     &::placeholder {
         font-size: 15px;
@@ -64,3 +74,9 @@ input {
     text-align: center;
 }
 
+.file-name {
+    position: absolute;
+    top: 12px;
+    left:0;
+    font-size: 15;
+}

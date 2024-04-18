@@ -1,14 +1,22 @@
-<section class="calculation charter">
+<section class="calculation">
     <div class="container">
         <div class="template-title col-lg-7">
             <h2>Получить рассчет стоимости доставки вашего груза</h2>
         </div>
+        <div class="calculation-row">
         <form class="calculation-form">
+
             <div class="row">
                 <div class="col">
                     <div class="input-wrapper">
-                        <label for="calculation-category">Категория товара:</label>
-                        <input id="calculation-category" type="text"  placeholder="Категория товара">
+                        <label for="calculation-weight">Категория товара:</label>
+                        <select name="category" id="category" value="Выберите категорию">
+                            <option value="Бытовая техника">Бытовая техника</option>
+                            <option value="Косметика">Косметика</option>
+                            <option value="Авто товары">Авто товары</option>
+                            <option value="Одежда">Одежда</option>
+                            <option value="Другое">Другое</option>
+                        </select>
                     </div>
                     <div class="input-wrapper">
                         <label for="calculation-weight">Вес груза (кг):</label>
@@ -17,11 +25,11 @@
                 </div>
                 <div class="col">
                     <div class="input-wrapper">
-                        <label for="calculation-price">Стоимость груза товара</label>
+                        <label for="calculation-price">Стоимость груза товара:</label>
                         <input id="calculation-price" type="number" placeholder="Введите стоимость">
                     </div>
                     <div class="input-wrapper">
-                        <label for="calculation-size">Объем груза (м3)</label>
+                        <label for="calculation-size">Объем груза (м3):"</label>
                         <input id="calculation-size" type="number" placeholder="Введите объем">
                     </div>
                 </div>
@@ -29,11 +37,11 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="input-wrapper">
+                    <div class="input-wrapper checkbox">
                         <input id="insurance" type="checkbox" checked name="terms">
                         <label for="insurance">Страховка</label>
                     </div>
-                    <div class="input-wrapper">
+                    <div class="input-wrapper checkbox">
                         <input id="clearance" type="checkbox" name="terms">
                         <label for="clearance">Таможенное оформление</label>
                     </div>
@@ -48,7 +56,7 @@
             <div class="row">
                 <div class="col">
                     <div class="input-wrapper">
-                        <div id="file-name"></div>
+                        <div id="file-name" class="file-name"></div>
                         <input id="calculation-file" type="file">
                         <label for="calculation-file">Загрузить фото</label>
                     </div>
@@ -60,5 +68,10 @@
                 </div>
             </div>
         </form>
+        <div class="calculation-decoration">
+            <img src="assets/img/calculation-decoration.png" class="img-fluid" alt="decoration">
+        </div>
     </div>
+</div>
 </section>
+
