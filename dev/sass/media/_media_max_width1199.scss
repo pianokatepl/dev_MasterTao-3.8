@@ -11,7 +11,12 @@
 
   @media screen and (max-width: 1199px) {
     .header-nav__list {
-      gap: 20px;
+    gap: 20px;
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
     }
     .header-list-link {
       padding: 14px 5px 10px;
