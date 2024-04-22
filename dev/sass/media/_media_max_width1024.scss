@@ -81,24 +81,22 @@
       top: 72px;
   }
 
-  &-list {
+  &__list {
       flex-direction: column;
       align-items: center;
       margin-bottom: 38px;
+      text-align: center;
       padding: 0;
+      text-align: center;
   }
 
-  button.btn {
-  width: 100%;
-  padding: 22px 23px;
-  max-width: 295px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  .btn-primary {
+    padding: 22px 23px;
+    max-width: 295px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
   }
-
   }
 
 .header-list-link{
@@ -164,9 +162,11 @@
 
   .row {
       flex-direction: column;
+  } 
+  .btn-lg {
+    width: 100%;
   }
 }
-
 
 .calculation-decoration,
 .template-title.col-lg-7 h2:after {
@@ -224,6 +224,7 @@ text-align: center;
       .slick-track::before {
           content: "";
           background: none;
+          padding: 20px;
   }
 }
 }
