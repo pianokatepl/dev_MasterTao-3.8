@@ -228,3 +228,37 @@ text-align: center;
   }
 }
 }
+
+.template-title h2 {
+  font-size: 24px;
+  text-align: center;
+}
+h3 {
+  font-size: 16px;
+}
+.calculation .template-title.col-lg-7 {
+  margin-bottom: 56px;
+}
+.calculation .template-title.col-lg-7:after {
+  display: inline-block;
+}
+.calculation .template-title.col-lg-7 h2:after {
+  display: none;
+}
+.col.controled-col {
+  padding-top: 7px;
+}
+.input-wrapper.controled-wrapper {
+  margin-bottom: 8px;
+}
+.input-wrapper.file-wrapper {
+  padding-top: 35px;
+}
+.advantages .slick-track::before {
+  content: "";
+  background: none;
+}
+.slider-template {
+  width: 780px;
+  margin: 0 auto;
+}

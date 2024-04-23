@@ -72,4 +72,11 @@ function mobileOnlySlider($slidername, $breakpoint) {
   });
 }
 
+$('.slider-template').slick({
+  infinite: true,
+  arrows: true,
+  slidesToShow: 3,
+});
+	
+
   
