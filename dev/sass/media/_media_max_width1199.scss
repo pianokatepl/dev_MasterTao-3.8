@@ -19,6 +19,16 @@
     flex-direction: column;
     }
     .header-list-link {
-      padding: 14px 5px 10px;
+      padding: 16px 7px 10px;
+    }
+    .calculation-decoration {
+      width: 38vw;;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .slider-template {
+      max-width: 780px;
+      margin: 0 auto;
     }
   }

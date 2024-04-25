@@ -183,9 +183,7 @@ h3 {
   font-size: 16px;
 }
 
-.calculation {
-
-  
+.calculation
   .template-title {
 
       &.col-lg-7 {
@@ -196,7 +194,7 @@ h3 {
           }
 
           h2 {
-              &:after {
+          &:after {
                   display: none;
               }
           }
@@ -224,10 +222,12 @@ text-align: center;
       .slick-track::before {
           content: "";
           background: none;
+          padding: 20px;}
+      .slick-dots {
           padding: 20px;
   }
 }
-}
+
 
 .template-title h2 {
   font-size: 24px;
@@ -259,6 +259,33 @@ h3 {
   background: none;
 }
 .slider-template {
-  width: 780px;
+  max-width: 1170px;
   margin: 0 auto;
 }
+
+.slider-template {
+{
+    max-width: 335px;
+  }
+      .slick-list {
+      margin-bottom: 32px;
+      }
+  .slick-list {
+   padding: 0; 
+  }
+  .template-card-row {
+  gap: 12px;
+  }
+    .btn {
+      padding: 13px 5px;
+    }
+    .template-card {
+      padding: 0 23px 27px;
+    }
+    .img-box {
+      margin: 0 -23px 29px;
+      img {
+        height: 213px;
+      }
+      }
+    }

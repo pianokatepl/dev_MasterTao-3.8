@@ -40,7 +40,7 @@ ol ol,ol ul,ul ol,ul ul{margin-bottom:0}
 dt{font-weight:700}
 dd{margin-bottom:.5rem;margin-left:0}
 blockquote{margin:0 0 1rem}
-b,strong{font-weight:bolder}
+b,strong{font-weight:bolder,font-size:46px;}
 .small,small{font-size:.875em}
 .mark,mark{padding:.2em;background-color:#fcf8e3}
 sub,sup{position:relative;font-size:.75em;line-height:0;vertical-align:baseline}
