@@ -263,10 +263,8 @@ h3 {
   margin: 0 auto;
 }
 
-.slider-template {
-{
-    max-width: 335px;
-  }
+.slider-template 
+  ///  { max-width: 335px;}
       .slick-list {
       margin-bottom: 32px;
       }
@@ -283,9 +281,8 @@ h3 {
       padding: 0 23px 27px;
     }
     .img-box {
-      margin: 0 -23px 29px;
+     ///margin: 0 -23px 29px;
       img {
         height: 213px;
       }
       }
-    }
