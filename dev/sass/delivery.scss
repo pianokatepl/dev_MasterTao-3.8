@@ -103,12 +103,12 @@
 display: flex;
 gap: 14px;
 margin-top: auto;
-}
- 
-.template-card-btn-row .btn {
+.btn {
   width: 50%;
+  max-width: 153px;
   justify-content: center;
   padding: 13px 10px;
+}
 }
 
 .slider-template {

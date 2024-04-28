@@ -81,12 +81,14 @@ $('.slider-template').slick({
       breakpoint: 1400,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
       }
     },
     {
       breakpoint: 1025,
       settings: {
         slidesToShow: 1,
+        slidesToScroll: 1,
       }
     },
     {
